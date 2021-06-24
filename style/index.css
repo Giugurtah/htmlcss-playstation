@@ -1,4 +1,7 @@
 /* General properties */
+ul {
+    list-style: none;
+}
 .ms-bg-black {
     background-color: black;
 }
@@ -31,6 +34,9 @@
 }
 .ms-w-80px {
     width: 80px;
+}
+.ms-w-20px {
+    width: 20px;
 }
 .ms-filter-opacity{
     filter: opacity(0.5);
