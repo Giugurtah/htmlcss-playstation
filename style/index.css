@@ -2,11 +2,23 @@
 .ms-bg-black {
     background-color: black;
 }
+.ms-bg-gray {
+    background-color: rgb(31, 31, 31);
+}
+.ms-bg-lightgray {
+    background-color: rgb(190, 190, 190);
+}
+.ms-bg-lightergray {
+    background-color: rgb(220, 220, 220);
+}
 .ms-bg-white {
     background-color: white;
 }
 .ms-bg-primary {
     background-color: rgb(49, 104, 226)
+}
+.ms-bg-darkprimary {
+    background-color: rgb(22, 29, 58)
 }
 .ms-text-white {
     color: white;
@@ -30,7 +42,6 @@
 }
 .ms-jumbotron > div {
     height: 500px;
-    background-image: url(../img/jumbo-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,10 +50,15 @@
     background-color: rgb(203, 62, 30);
     color: white;
 }
+#jumbo-returnal > div {
+    background-image: url(../img/jumbo-bg.png);
+}
+#jumbo-takestwo > div{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
 
 /* Styling game section */
 .games img {
     border-radius: 15px;
 }
 
-/* Styling console section */
