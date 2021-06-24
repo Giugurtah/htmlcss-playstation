@@ -1,7 +1,48 @@
+/* General properties */
 .ms-bg-black {
     background-color: black;
 }
-
+.ms-bg-white {
+    background-color: white;
+}
+.ms-bg-primary {
+    background-color: rgb(49, 104, 226)
+}
+.ms-text-white {
+    color: white;
+}
+.ms-text-gray {
+    color: gray;
+}
+.ms-text-primary {
+    color: rgb(49, 104, 226)
+}
 .ms-w-80px {
     width: 80px;
 }
+.ms-filter-opacity{
+    filter: opacity(0.5);
+}
+
+/* Styling jumbotron section */
+.ms-jumbotron {
+    padding-top: 100px
+}
+.ms-jumbotron > div {
+    height: 500px;
+    background-image: url(../img/jumbo-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ms-jumbotron .btn {
+    background-color: rgb(203, 62, 30);
+    color: white;
+}
+
+/* Styling game section */
+.games img {
+    border-radius: 15px;
+}
+
+/* Styling console section */
