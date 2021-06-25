@@ -18,10 +18,10 @@ ul {
     background-color: white;
 }
 .ms-bg-primary {
-    background-color: rgb(49, 104, 226)
+    background-color: rgb(49, 104, 226);
 }
 .ms-bg-darkprimary {
-    background-color: rgb(22, 29, 58)
+    background-color: rgb(22, 29, 58);
 }
 .ms-text-white {
     color: white;
@@ -30,7 +30,7 @@ ul {
     color: gray;
 }
 .ms-text-primary {
-    color: rgb(49, 104, 226)
+    color: rgb(49, 104, 226);
 }
 .ms-w-80px {
     width: 80px;
@@ -49,10 +49,34 @@ ul {
 header .container-fluid {
     z-index: 2;
 }
-
-header li:after {
-    /* content: url(../img/chevron-down-solid.svg); */
+header #ms-nav-link {
+    color: black;
 }
+header #ms-nav-link:hover {
+    color: rgb(49, 104, 226);
+}
+header .nav-link [alt*="chevron"] {
+    transition: transform 1s;
+}
+header .nav-link [alt*="chevron-hover"] {
+    display: none;
+}
+header .nav-link:hover [alt*="chevron-hover"] {
+    display: initial;
+}
+header .nav-link:hover [alt*="chevron-normale"] {
+    display: none;
+}
+header .nav-link:focus [alt*="chevron"]{
+    transform: rotateZ(180deg);
+}
+header .btn:hover, 
+header .btn:focus {
+    box-shadow: 0 0 0 .25rem rgb(190, 190, 190);
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
 /* Styling jumbotron section */
 main {
     padding-top: 110px;
@@ -69,6 +93,9 @@ main {
     background-color: rgb(203, 62, 30);
     color: white;
 }
+.ms-jumbotron .btn:hover {
+    box-shadow: 0 0 0 .25rem rgb(255, 255, 255);
+}
 #jumbo-returnal {
     background-image: url(../img/jumbo-bg.png);
 }
@@ -79,9 +106,57 @@ main {
 /* Styling game section */
 .games img {
     border-radius: 15px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.games img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
 }
 
 /* Styling console section */
+.console .btn:hover {
+    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
+    background-color: white;
+}
+.console .highlight:hover {
+    filter: opacity(1);
+}
+.console .highlight:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+
+    height: 3px;
+    width: 0;
+    background-color: rgb(49, 104, 226);
+
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;;
+}
+.console .highlight:hover:after {
+    width: 80%;
+    left: 10%;
+}
+
+/* Styling play-plus section  */
+.play-plus .btn:hover {
+    background-color: white;
+    color: rgb(49, 104, 226);
+    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
+}
+
+/* Styling play-now section */
+.play-now .btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
+}
+/* Styling footer */
+footer {
+    font-size: 12px;
+}
+
+/* Responsiveness */
 @media screen and (min-width: 768px) {
     .ms-col-md-20p100 {
         width: 20%;
@@ -92,9 +167,4 @@ main {
     .ms-col-md-60p100 {
         width: 60%;
     }
-}
-
-/* Styling footer */
-footer {
-    font-size: 12px;
 }
