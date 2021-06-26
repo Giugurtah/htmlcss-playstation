@@ -72,7 +72,8 @@ header .nav-link:focus [alt*="chevron"]{
 }
 header .btn:hover, 
 header .btn:focus {
-    box-shadow: 0 0 0 .25rem rgb(190, 190, 190);
+    box-shadow: 0 0 0 .20rem rgb(248, 249, 250),
+     0 0 0 .40rem rgb(31, 31, 31);
     background-color: rgb(31, 31, 31);
     color: white;
 }
@@ -94,7 +95,8 @@ main {
     color: white;
 }
 .ms-jumbotron .btn:hover {
-    box-shadow: 0 0 0 .25rem rgb(255, 255, 255);
+    box-shadow: 0 0 0 .25rem black,
+     0 0 0 .40rem rgb(203, 62, 30);
 }
 #jumbo-returnal {
     background-image: url(../img/jumbo-bg.png);
@@ -114,9 +116,21 @@ main {
 }
 
 /* Styling console section */
+.console .card {
+    border-width: 0;
+}
+.console .card-body{
+    padding: 0;
+}
+.console .card-footer{
+    padding: 0;
+    background-color: transparent;
+    border-width: 0;
+}
 .console .btn:hover {
-    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
-    background-color: white;
+    box-shadow: 0 0 0 .20rem white,
+    0 0 0 .40rem rgb(49, 104, 226);
+    color: white;
 }
 .console .highlight:hover {
     filter: opacity(1);
@@ -140,16 +154,16 @@ main {
 
 /* Styling play-plus section  */
 .play-plus .btn:hover {
-    background-color: white;
     color: rgb(49, 104, 226);
-    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
+    box-shadow: 0 0 0 .20rem rgb(190, 190, 190),
+     0 0 0 .40rem rgb(220, 220, 220);
 }
 
 /* Styling play-now section */
 .play-now .btn:hover {
-    background-color: white;
     color: black;
-    box-shadow: 0 0 0 .25rem rgb(49, 104, 226);
+    box-shadow: 0 0 0 .25rem rgb(22, 29, 58),
+     0 0 0 .40rem rgb(220, 220, 220);
 }
 /* Styling footer */
 footer {
